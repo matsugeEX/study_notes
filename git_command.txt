@@ -1,0 +1,23 @@
+・git remote add <α> <β>
+
+α-任意の名前を設定できるが origin が慣例。git clone の際にも自動的に origin が設定される。
+
+β-接続先のリモートリポジトリのURL。<例> https://github.com/username/example.git
+
+
+・git remote -v
+
+接続しているリモートリポジトリの確認。
+
+
+・git remote remove <α>
+
+α- git remote -v で確認した、先頭のリモート名。URLではない。　<例> git remote remove origin
+
+
+・git remote set-url <α> <β>
+
+α- git remote -v で確認した、先頭のリモート名。URLではない。
+
+β-接続先のリモートリポジトリのURL。<例> https://github.com/username/new_example.git
+
