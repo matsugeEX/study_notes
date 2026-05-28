@@ -1,0 +1,58 @@
+*<input text=～　/>*
+
+*<button onClick={onclick} />*　ではボタンをクリックしても送信を行えない。
+
+
+
+*<form onSubmit={handleSubmit(onSubmit)/>*
+
+&#x20;   *<input {...register("username")}>*
+
+&#x20;   *<button >*
+
+のように全体を *form* で包む。この時、*<button type="submit">* と同義。
+
+
+
+*import { useForm } from 'react'*
+
+*const {* 
+
+&#x20; *register,* 
+
+&#x20; *handleSubmit,* 
+
+&#x20; *formState: { errors }*
+
+*} = useForm();*
+
+で使用。
+
+
+
+register 
+
+
+
+inputなどの管理したいフォーム要素に記述する。この要素をReact Hook Formで管理することができる。
+
+
+
+・第一引数:参照する名前の登録を行う。
+
+・第二引数:バリデーションルールをオブジェクト形式で渡す。
+
+
+
+handlesubmit
+
+
+
+フォーム送信時の処理を行う。
+
+
+
+・第一引数:フォームの検証が成功したときのコールバック関数。
+
+・第二引数:フォームの検証が失敗したときのコールバック関数。
+

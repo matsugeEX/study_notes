@@ -21,3 +21,17 @@
 
 β-接続先のリモートリポジトリのURL。<例> https://github.com/username/new_example.git
 
+
+・git branch -a
+
+ブランチの一覧を見る。
+
+
+・git checkout -b <α>
+
+α-作成するブランチの名前。ローカルでブランチを作成する。
+
+
+・git push -u origin <α>
+
+α-作成したブランチ名。ブランチをリモートに登録。

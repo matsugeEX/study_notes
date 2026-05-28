@@ -1,0 +1,9 @@
+authentication_classes = []
+どのような認証を行うか。
+
+permissions_classes = []
+どのような許可を必要とするか
+・AllowAny              :だれでも
+・IsAuthenticated       :ログイン済みユーザーのみ
+・IsAdminUser           :管理者のみ
+・DjangoModelPermissions:Django標準の権限と連動
